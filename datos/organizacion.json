@@ -1,0 +1,150 @@
+{
+    "unidades": [
+        {
+            "id": 1,
+            "nombre": "Delegación Avenida del Mar",
+            "sector": "Avenida del Mar",
+            "direccion": "Avenida del Mar, La Serena",
+            "descripcion": "Delegación encargada de apoyar la gestión municipal y atención de requerimientos del sector costero.",
+            "responsable_id": 1
+        },
+        {
+            "id": 2,
+            "nombre": "Delegación Centro",
+            "sector": "Centro",
+            "direccion": "Centro de La Serena",
+            "descripcion": "Delegación destinada a coordinar actividades y requerimientos correspondientes al sector céntrico de la comuna.",
+            "responsable_id": 2
+        },
+        {
+            "id": 3,
+            "nombre": "Delegación La Antena",
+            "sector": "La Antena",
+            "direccion": "Sector La Antena, La Serena",
+            "descripcion": "Delegación encargada de canalizar solicitudes y apoyar la gestión territorial del sector La Antena.",
+            "responsable_id": 3
+        },
+        {
+            "id": 4,
+            "nombre": "Delegación Las Compañías",
+            "sector": "Las Compañías",
+            "direccion": "Sector Las Compañías, La Serena",
+            "descripcion": "Delegación orientada a la atención y coordinación de necesidades municipales del sector Las Compañías.",
+            "responsable_id": 4
+        },
+        {
+            "id": 5,
+            "nombre": "Delegación La Pampa",
+            "sector": "La Pampa",
+            "direccion": "Sector La Pampa, La Serena",
+            "descripcion": "Delegación responsable de apoyar la gestión municipal y comunitaria correspondiente al sector La Pampa.",
+            "responsable_id": 5
+        },
+        {
+            "id": 6,
+            "nombre": "Delegación Rural",
+            "sector": "Rural",
+            "direccion": "Sector Rural, La Serena",
+            "descripcion": "Delegación destinada a coordinar la atención municipal y los requerimientos de los sectores rurales de la comuna.",
+            "responsable_id": 6
+        }
+    ],
+    "personas": [
+        {
+            "id": 1,
+            "nombre": "Camila Rojas",
+            "cargo": "Delegada Municipal",
+            "unidad_id": 1,
+            "correo": "camila.rojas@municipalidad.cl",
+            "funciones": [
+                "Coordinar la gestión territorial de la delegación",
+                "Supervisar actividades municipales",
+                "Gestionar requerimientos de la comunidad"
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Felipe González",
+            "cargo": "Delegado Municipal",
+            "unidad_id": 2,
+            "correo": "felipe.gonzalez@municipalidad.cl",
+            "funciones": [
+                "Coordinar las actividades de la delegación",
+                "Supervisar compromisos municipales",
+                "Gestionar solicitudes ciudadanas"
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "Daniela Muñoz",
+            "cargo": "Delegada Municipal",
+            "unidad_id": 3,
+            "correo": "daniela.munoz@municipalidad.cl",
+            "funciones": [
+                "Coordinar acciones territoriales",
+                "Gestionar actividades comunitarias",
+                "Supervisar el cumplimiento de compromisos"
+            ]
+        },
+        {
+            "id": 4,
+            "nombre": "Sebastián Soto",
+            "cargo": "Delegado Municipal",
+            "unidad_id": 4,
+            "correo": "sebastian.soto@municipalidad.cl",
+            "funciones": [
+                "Coordinar equipos de trabajo",
+                "Gestionar requerimientos del sector",
+                "Realizar seguimiento de actividades"
+            ]
+        },
+        {
+            "id": 5,
+            "nombre": "Valentina Morales",
+            "cargo": "Delegada Municipal",
+            "unidad_id": 5,
+            "correo": "valentina.morales@municipalidad.cl",
+            "funciones": [
+                "Coordinar la atención territorial",
+                "Supervisar actividades de la delegación",
+                "Mantener seguimiento de solicitudes"
+            ]
+        },
+        {
+            "id": 6,
+            "nombre": "Matías Herrera",
+            "cargo": "Delegado Municipal",
+            "unidad_id": 6,
+            "correo": "matias.herrera@municipalidad.cl",
+            "funciones": [
+                "Coordinar la atención de sectores rurales",
+                "Gestionar solicitudes territoriales",
+                "Supervisar compromisos municipales"
+            ]
+        },
+        {
+            "id": 7,
+            "nombre": "Fernanda Díaz",
+            "cargo": "Administrativa",
+            "unidad_id": 1,
+            "correo": "fernanda.diaz@municipalidad.cl",
+            "funciones": [
+                "Registrar solicitudes recibidas",
+                "Organizar documentación",
+                "Apoyar la atención de usuarios"
+            ]
+        },
+        {
+            "id": 8,
+            "nombre": "Nicolás Castillo",
+            "cargo": "Profesional de Apoyo",
+            "unidad_id": 4,
+            "correo": "nicolas.castillo@municipalidad.cl",
+            "funciones": [
+                "Apoyar actividades territoriales",
+                "Realizar seguimiento de requerimientos",
+                "Preparar información de gestión"
+            ]
+        }
+    ]
+}

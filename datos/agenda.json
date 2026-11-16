@@ -1,0 +1,84 @@
+{
+    "compromisos": [
+        {
+            "id": 1,
+            "titulo": "Revisión de luminarias del sector",
+            "descripcion": "Revisar puntos con problemas de iluminación informados por vecinos.",
+            "responsable": "Camila Rojas",
+            "unidad_id": 1,
+            "fecha_compromiso": "2026-09-15",
+            "estado": "Pendiente",
+            "observaciones": "Se requiere coordinación con el área correspondiente."
+        },
+        {
+            "id": 2,
+            "titulo": "Seguimiento de solicitudes del centro",
+            "descripcion": "Revisar el estado de solicitudes ciudadanas ingresadas durante el mes.",
+            "responsable": "Felipe González",
+            "unidad_id": 2,
+            "fecha_compromiso": "2026-09-18",
+            "estado": "En proceso",
+            "observaciones": "Existen solicitudes derivadas a otras unidades municipales."
+        },
+        {
+            "id": 3,
+            "titulo": "Coordinación con organizaciones comunitarias",
+            "descripcion": "Realizar reunión de seguimiento con organizaciones del sector.",
+            "responsable": "Daniela Muñoz",
+            "unidad_id": 3,
+            "fecha_compromiso": "2026-09-20",
+            "estado": "Ingresado",
+            "observaciones": "Pendiente confirmar horario de reunión."
+        },
+        {
+            "id": 4,
+            "titulo": "Inspección de áreas verdes",
+            "descripcion": "Verificar necesidades de mantención en áreas verdes de la delegación.",
+            "responsable": "Sebastián Soto",
+            "unidad_id": 4,
+            "fecha_compromiso": "2026-09-22",
+            "estado": "Pendiente",
+            "observaciones": "Se realizará recorrido con personal de apoyo."
+        },
+        {
+            "id": 5,
+            "titulo": "Evaluación de jornada comunitaria",
+            "descripcion": "Revisar resultados y observaciones obtenidas durante la jornada comunitaria.",
+            "responsable": "Valentina Morales",
+            "unidad_id": 5,
+            "fecha_compromiso": "2026-09-12",
+            "estado": "Realizado",
+            "observaciones": "Actividad finalizada y revisada."
+        },
+        {
+            "id": 6,
+            "titulo": "Visita de seguimiento a sectores rurales",
+            "descripcion": "Realizar seguimiento de requerimientos levantados en visitas anteriores.",
+            "responsable": "Matías Herrera",
+            "unidad_id": 6,
+            "fecha_compromiso": "2026-09-25",
+            "estado": "En proceso",
+            "observaciones": "Se están coordinando los sectores que serán visitados."
+        },
+        {
+            "id": 7,
+            "titulo": "Entrega de informe territorial",
+            "descripcion": "Preparar informe con los principales requerimientos detectados en terreno.",
+            "responsable": "Nicolás Castillo",
+            "unidad_id": 4,
+            "fecha_compromiso": "2026-09-28",
+            "estado": "Ingresado",
+            "observaciones": "El informe debe consolidar antecedentes de las últimas inspecciones."
+        },
+        {
+            "id": 8,
+            "titulo": "Actualización de registro de solicitudes",
+            "descripcion": "Actualizar el registro interno con solicitudes recibidas y derivadas.",
+            "responsable": "Fernanda Díaz",
+            "unidad_id": 1,
+            "fecha_compromiso": "2026-09-10",
+            "estado": "Realizado",
+            "observaciones": "Registro actualizado correctamente."
+        }
+    ]
+}

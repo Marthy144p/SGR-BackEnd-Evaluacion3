@@ -1,0 +1,108 @@
+{
+    "periodos": [
+        {
+            "id": 1,
+            "nombre": "Segundo semestre 2026",
+            "fecha_inicio": "2026-07-01",
+            "fecha_fin": "2026-12-31"
+        }
+    ],
+    "metas": [
+        {
+            "id": 1,
+            "nombre": "Atención de solicitudes ciudadanas",
+            "descripcion": "Gestionar y dar seguimiento a solicitudes recibidas por la delegación.",
+            "unidad_id": 1,
+            "persona_id": 1,
+            "periodo_id": 1,
+            "meta_periodo": 50,
+            "avance_aprobado": 44,
+            "ponderacion": 25,
+            "unidad_medida": "solicitudes"
+        },
+        {
+            "id": 2,
+            "nombre": "Actividades territoriales",
+            "descripcion": "Ejecutar actividades de apoyo comunitario y gestión territorial.",
+            "unidad_id": 2,
+            "persona_id": 2,
+            "periodo_id": 1,
+            "meta_periodo": 20,
+            "avance_aprobado": 15,
+            "ponderacion": 20,
+            "unidad_medida": "actividades"
+        },
+        {
+            "id": 3,
+            "nombre": "Seguimiento de compromisos",
+            "descripcion": "Realizar seguimiento de compromisos municipales registrados.",
+            "unidad_id": 3,
+            "persona_id": 3,
+            "periodo_id": 1,
+            "meta_periodo": 30,
+            "avance_aprobado": 28,
+            "ponderacion": 25,
+            "unidad_medida": "compromisos"
+        },
+        {
+            "id": 4,
+            "nombre": "Inspecciones territoriales",
+            "descripcion": "Realizar inspecciones de espacios y requerimientos municipales.",
+            "unidad_id": 4,
+            "persona_id": 4,
+            "periodo_id": 1,
+            "meta_periodo": 24,
+            "avance_aprobado": 13,
+            "ponderacion": 30,
+            "unidad_medida": "inspecciones"
+        },
+        {
+            "id": 5,
+            "nombre": "Coordinaciones comunitarias",
+            "descripcion": "Coordinar reuniones y acciones con organizaciones del territorio.",
+            "unidad_id": 5,
+            "persona_id": 5,
+            "periodo_id": 1,
+            "meta_periodo": 18,
+            "avance_aprobado": 14,
+            "ponderacion": 25,
+            "unidad_medida": "coordinaciones"
+        },
+        {
+            "id": 6,
+            "nombre": "Visitas a sectores rurales",
+            "descripcion": "Realizar visitas a sectores rurales y levantar requerimientos.",
+            "unidad_id": 6,
+            "persona_id": 6,
+            "periodo_id": 1,
+            "meta_periodo": 16,
+            "avance_aprobado": 16,
+            "ponderacion": 25,
+            "unidad_medida": "visitas"
+        },
+        {
+            "id": 7,
+            "nombre": "Actualización de registros",
+            "descripcion": "Mantener actualizados los registros de solicitudes y documentación.",
+            "unidad_id": 1,
+            "persona_id": 7,
+            "periodo_id": 1,
+            "meta_periodo": 40,
+            "avance_aprobado": 25,
+            "ponderacion": 20,
+            "unidad_medida": "registros"
+        },
+        {
+            "id": 8,
+            "nombre": "Informes de gestión territorial",
+            "descripcion": "Preparar informes de seguimiento de requerimientos e inspecciones.",
+            "unidad_id": 4,
+            "persona_id": 8,
+            "periodo_id": 1,
+            "meta_periodo": 12,
+            "avance_aprobado": 9,
+            "ponderacion": 20,
+            "unidad_medida": "informes"
+        }
+    ]
+}

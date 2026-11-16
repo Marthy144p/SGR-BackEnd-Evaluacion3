@@ -1,0 +1,132 @@
+{
+    "actividades": [
+        {
+            "id": 1,
+            "titulo": "Operativo de limpieza comunitaria",
+            "fecha": "2026-08-05",
+            "unidad_id": 1,
+            "responsable": "Camila Rojas",
+            "tipo": "Actividad territorial",
+            "estado": "Realizada",
+            "descripcion": "Jornada de limpieza coordinada con vecinos del sector Avenida del Mar.",
+            "servicio": "Aseo y ornato",
+            "solicitud": "Mejoramiento de espacios públicos"
+        },
+        {
+            "id": 2,
+            "titulo": "Atención de solicitudes vecinales",
+            "fecha": "2026-08-08",
+            "unidad_id": 2,
+            "responsable": "Felipe González",
+            "tipo": "Atención ciudadana",
+            "estado": "En proceso",
+            "descripcion": "Revisión y derivación de solicitudes realizadas por vecinos del sector Centro.",
+            "servicio": "Atención municipal",
+            "solicitud": "Diversos requerimientos ciudadanos"
+        },
+        {
+            "id": 3,
+            "titulo": "Reunión con organizaciones comunitarias",
+            "fecha": "2026-08-12",
+            "unidad_id": 3,
+            "responsable": "Daniela Muñoz",
+            "tipo": "Coordinación",
+            "estado": "Realizada",
+            "descripcion": "Reunión de coordinación con representantes de organizaciones territoriales.",
+            "servicio": "Gestión comunitaria",
+            "solicitud": "Coordinación de actividades barriales"
+        },
+        {
+            "id": 4,
+            "titulo": "Inspección de espacios públicos",
+            "fecha": "2026-08-15",
+            "unidad_id": 4,
+            "responsable": "Sebastián Soto",
+            "tipo": "Inspección territorial",
+            "estado": "Pendiente",
+            "descripcion": "Inspección programada para revisar necesidades de mantención en espacios públicos.",
+            "servicio": "Inspección municipal",
+            "solicitud": "Revisión de áreas comunitarias"
+        },
+        {
+            "id": 5,
+            "titulo": "Apoyo a jornada comunitaria",
+            "fecha": "2026-08-18",
+            "unidad_id": 5,
+            "responsable": "Valentina Morales",
+            "tipo": "Actividad comunitaria",
+            "estado": "En proceso",
+            "descripcion": "Apoyo municipal para actividad organizada por vecinos del sector La Pampa.",
+            "servicio": "Apoyo territorial",
+            "solicitud": "Apoyo logístico"
+        },
+        {
+            "id": 6,
+            "titulo": "Visita a sectores rurales",
+            "fecha": "2026-08-22",
+            "unidad_id": 6,
+            "responsable": "Matías Herrera",
+            "tipo": "Visita territorial",
+            "estado": "Realizada",
+            "descripcion": "Recorrido por sectores rurales para levantar requerimientos de la comunidad.",
+            "servicio": "Gestión territorial",
+            "solicitud": "Levantamiento de necesidades"
+        }
+    ],
+    "evidencias": [
+        {
+            "id": 1,
+            "actividad_id": 1,
+            "nombre": "Registro fotográfico del operativo",
+            "tipo": "Fotografía",
+            "fecha": "2026-08-05",
+            "estado_validacion": "Aprobada",
+            "descripcion": "Registro de la jornada de limpieza realizada en el sector."
+        },
+        {
+            "id": 2,
+            "actividad_id": 2,
+            "nombre": "Listado de solicitudes atendidas",
+            "tipo": "Documento",
+            "fecha": "2026-08-08",
+            "estado_validacion": "Pendiente",
+            "descripcion": "Documento que resume las solicitudes recibidas durante la jornada."
+        },
+        {
+            "id": 3,
+            "actividad_id": 3,
+            "nombre": "Acta de reunión",
+            "tipo": "Documento",
+            "fecha": "2026-08-12",
+            "estado_validacion": "Aprobada",
+            "descripcion": "Acta con los temas y acuerdos tratados durante la reunión."
+        },
+        {
+            "id": 4,
+            "actividad_id": 4,
+            "nombre": "Formulario de inspección",
+            "tipo": "Formulario",
+            "fecha": "2026-08-15",
+            "estado_validacion": "Pendiente",
+            "descripcion": "Formulario preparado para registrar observaciones de la inspección."
+        },
+        {
+            "id": 5,
+            "actividad_id": 5,
+            "nombre": "Registro de coordinación",
+            "tipo": "Documento",
+            "fecha": "2026-08-18",
+            "estado_validacion": "En revisión",
+            "descripcion": "Documento con antecedentes de coordinación para la jornada comunitaria."
+        },
+        {
+            "id": 6,
+            "actividad_id": 6,
+            "nombre": "Informe de visita territorial",
+            "tipo": "Informe",
+            "fecha": "2026-08-22",
+            "estado_validacion": "Aprobada",
+            "descripcion": "Resumen de los requerimientos identificados durante la visita."
+        }
+    ]
+}
