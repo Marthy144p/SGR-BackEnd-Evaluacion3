@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+
+{% block titulo %}
+Evidencias | SGR La Serena
+{% endblock %}
+
+
+{% block contenido %}
+
+<section class="hero">
+
+    <p class="etiqueta">
+        ACTIVIDADES
+    </p>
+
+    <h1>
+        Evidencias
+    </h1>
+
+    <p class="descripcion-principal">
+        Consulta de evidencias asociadas a las actividades
+        y su estado de validación.
+    </p>
+
+</section>
+
+
+<section class="grilla-aplicaciones">
+
+    {% for evidencia in evidencias %}
+
+        <article class="tarjeta-aplicacion">
+
+            <span class="etiqueta">
+                {{ evidencia.tipo }}
+            </span>
+
+            <h2>
+                {{ evidencia.nombre }}
+            </h2>
+
+            {% if evidencia.actividad %}
+
+                <p>
+                    <strong>Actividad:</strong>
+                    {{ evidencia.actividad.titulo }}
+                </p>
+
+            {% else %}
+
+                <p>
+                    <strong>Actividad:</strong>
+                    No disponible
+                </p>
+
+            {% endif %}
+
+            <p>
+                <strong>Fecha:</strong>
+                {{ evidencia.fecha }}
+            </p>
+
+            <p>
+                <strong>Estado de validación:</strong>
+                {{ evidencia.estado_validacion }}
+            </p>
+
+            <a class="boton"
+               href="{% url 'actividades:detalle_evidencia' evidencia.id %}">
+
+                Ver detalle
+
+            </a>
+
+        </article>
+
+    {% empty %}
+
+        <p>
+            No existen evidencias registradas.
+        </p>
+
+    {% endfor %}
+
+</section>
+
+
+<p>
+    <a class="boton"
+       href="{% url 'actividades:lista_actividades' %}">
+
+        Volver a actividades
+
+    </a>
+</p>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }} | SGR La Serena
+{% endblock %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/admin_perzo.css' %}">
+{% endblock %}
+
+{% block branding %}
+    <div id="site-name">
+        <a href="{% url 'admin:index' %}">
+            SGR La Serena
+        </a>
+        <span class="subtitulo-admin">
+            Sistema de Gestión de Resultados
+        </span>
+    </div>
+{% endblock %}

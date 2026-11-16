@@ -1,0 +1,349 @@
+:root {
+    --rojo-principal: #8f2d2d;
+    --rojo-oscuro: #672020;
+    --rojo-claro: #f4e8e8;
+
+    --azul-oscuro: #193441;
+
+    --fondo: #f5f6f7;
+    --blanco: #ffffff;
+
+    --texto: #263238;
+    --texto-secundario: #607078;
+
+    --borde: #dfe4e7;
+
+    --sombra: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    min-height: 100%;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: var(--texto);
+    background-color: var(--fondo);
+}
+
+
+.contenedor {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+
+/* ENCABEZADO */
+
+.encabezado {
+    background-color: var(--rojo-principal);
+    color: var(--blanco);
+}
+
+
+.barra-navegacion {
+    min-height: 76px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.marca {
+    color: var(--blanco);
+    text-decoration: none;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+.navegacion {
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
+}
+
+
+.navegacion a {
+    color: var(--blanco);
+    text-decoration: none;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    padding: 8px 0;
+
+    transition: opacity 0.2s ease;
+}
+
+
+.navegacion a:hover {
+    opacity: 0.75;
+}
+
+
+/* CONTENIDO */
+
+.contenido-principal {
+    flex: 1;
+}
+
+
+/* HERO */
+
+.hero {
+    padding: 75px 0 45px;
+
+    max-width: 850px;
+}
+
+
+.etiqueta {
+    display: inline-block;
+
+    color: var(--rojo-principal);
+
+    font-size: 0.78rem;
+    font-weight: bold;
+
+    letter-spacing: 0.12em;
+}
+
+
+.hero h1 {
+    margin: 12px 0 18px;
+
+    color: var(--rojo-oscuro);
+
+    font-size: clamp(
+        2.3rem,
+        5vw,
+        4rem
+    );
+}
+
+
+.descripcion-principal {
+    margin: 0;
+
+    max-width: 760px;
+
+    color: var(--texto-secundario);
+
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+
+/* PRESENTACIÓN */
+
+.presentacion {
+    margin-bottom: 35px;
+
+    padding: 28px;
+
+    border-left: 6px solid var(--rojo-principal);
+
+    background-color: var(--blanco);
+
+    box-shadow: var(--sombra);
+
+    border-radius: 8px;
+}
+
+
+.presentacion h2 {
+    margin-top: 0;
+
+    color: var(--rojo-oscuro);
+}
+
+
+.presentacion p {
+    margin-bottom: 0;
+
+    color: var(--texto-secundario);
+
+    line-height: 1.6;
+}
+
+
+/* TARJETAS */
+
+.grilla-aplicaciones {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    padding-bottom: 45px;
+}
+
+
+.tarjeta-aplicacion {
+    padding: 30px;
+
+    background-color: var(--blanco);
+
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+
+    box-shadow: var(--sombra);
+}
+
+
+.tarjeta-aplicacion h2 {
+    margin: 12px 0;
+
+    color: var(--rojo-oscuro);
+}
+
+
+.tarjeta-aplicacion p {
+    min-height: 55px;
+
+    color: var(--texto-secundario);
+
+    line-height: 1.6;
+}
+
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 11px 20px;
+
+    color: var(--blanco);
+
+    background-color: var(--rojo-principal);
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.boton:hover {
+    background-color: var(--rojo-oscuro);
+
+    transform: translateY(-2px);
+}
+
+
+/* INFORMACIÓN */
+
+.informacion-sistema {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 70px;
+}
+
+
+.informacion-sistema div {
+    padding: 25px;
+
+    border-radius: 10px;
+
+    background-color: var(--rojo-claro);
+}
+
+
+.informacion-sistema h2 {
+    margin-top: 0;
+
+    color: var(--rojo-oscuro);
+}
+
+
+.informacion-sistema p {
+    margin-bottom: 0;
+
+    line-height: 1.6;
+}
+
+
+/* PIE DE PÁGINA */
+
+.pie-pagina {
+    padding: 25px 0;
+
+    color: var(--blanco);
+
+    background-color: var(--azul-oscuro);
+
+    text-align: center;
+}
+
+
+.pie-pagina p {
+    margin: 5px 0;
+
+    font-size: 0.9rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .barra-navegacion {
+        padding: 20px 0;
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .navegacion {
+        flex-wrap: wrap;
+
+        gap: 14px 20px;
+    }
+
+
+    .grilla-aplicaciones {
+        grid-template-columns: 1fr;
+    }
+
+
+    .informacion-sistema {
+        grid-template-columns: 1fr;
+    }
+
+}

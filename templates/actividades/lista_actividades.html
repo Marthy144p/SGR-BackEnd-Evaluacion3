@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+
+{% block titulo %}
+Actividades | SGR La Serena
+{% endblock %}
+
+
+{% block contenido %}
+
+<section class="hero">
+
+    <p class="etiqueta">
+        ACTIVIDADES
+    </p>
+
+    <h1>
+        Actividades y Trabajos
+    </h1>
+
+    <p class="descripcion-principal">
+        Consulta de actividades, servicios y solicitudes
+        asociadas a la gestión de las delegaciones municipales.
+    </p>
+
+</section>
+
+
+<section class="grilla-aplicaciones">
+
+    {% for actividad in actividades %}
+
+        <article class="tarjeta-aplicacion">
+
+            <span class="etiqueta">
+                {{ actividad.tipo }}
+            </span>
+
+            <h2>
+                {{ actividad.titulo }}
+            </h2>
+
+            <p>
+                <strong>Fecha:</strong>
+                {{ actividad.fecha }}
+            </p>
+
+            <p>
+                <strong>Responsable:</strong>
+                {{ actividad.responsable }}
+            </p>
+
+            <p>
+                <strong>Estado:</strong>
+                {{ actividad.estado }}
+            </p>
+
+            <p>
+                {{ actividad.descripcion }}
+            </p>
+
+            <a class="boton"
+               href="{% url 'actividades:detalle_actividad' actividad.id %}">
+
+                Ver detalle
+
+            </a>
+
+        </article>
+
+    {% empty %}
+
+        <p>
+            No existen actividades registradas.
+        </p>
+
+    {% endfor %}
+
+</section>
+
+
+<section class="presentacion">
+
+    <h2>
+        Evidencias
+    </h2>
+
+    <p>
+        También puedes consultar las evidencias asociadas
+        a las actividades registradas.
+    </p>
+
+    <a class="boton"
+       href="{% url 'actividades:lista_evidencias' %}">
+
+        Ver evidencias
+
+    </a>
+
+</section>
+
+{% endblock %}

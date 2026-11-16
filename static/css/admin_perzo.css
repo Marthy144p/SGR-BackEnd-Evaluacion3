@@ -1,0 +1,313 @@
+
+/* ==========================================
+   SGR LA SERENA
+   ADMINISTRADOR MUNICIPAL MODERNO
+   ========================================== */
+
+/* COLORES INSTITUCIONALES */
+
+:root,
+html[data-theme="light"] {
+    --primary: #8f2d2d;
+    --secondary: #672020;
+    --accent: #ffffff;
+    --primary-fg: #ffffff;
+
+    --body-bg: #f3f5f7;
+    --body-fg: #263238;
+    --body-quiet-color: #607078;
+    --body-loud-color: #193441;
+
+    --header-bg: #8f2d2d;
+    --header-color: #ffffff;
+    --header-branding-color: #ffffff;
+    --header-link-color: #ffffff;
+
+    --breadcrumbs-bg: #672020;
+    --breadcrumbs-fg: #ffffff;
+    --breadcrumbs-link-fg: #ffffff;
+
+    --link-fg: #8f2d2d;
+    --link-hover-color: #672020;
+    --link-selected-fg: #672020;
+
+    --border-color: #dfe4e7;
+    --hairline-color: #e6e9ec;
+    --darkened-bg: #edf0f3;
+    --selected-bg: #f4e8e8;
+    --selected-row: #fbf0f0;
+
+    --button-bg: #8f2d2d;
+    --button-hover-bg: #672020;
+    --default-button-bg: #193441;
+    --default-button-hover-bg: #102630;
+
+    --object-tools-bg: #8f2d2d;
+    --object-tools-hover-bg: #672020;
+
+    --message-success-bg: #e8f4ed;
+    --message-warning-bg: #fff3d7;
+    --message-error-bg: #fae7e7;
+
+    color-scheme: light;
+}
+
+/* ESTRUCTURA GENERAL */
+
+body {
+    background-color: var(--body-bg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    background-color: var(--body-bg);
+}
+
+#content {
+    padding-top: 28px;
+}
+
+#content h1 {
+    color: #672020;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* ENCABEZADO */
+
+#header {
+    background: #8f2d2d;
+    color: #ffffff;
+    padding: 18px 30px;
+    min-height: 76px;
+    box-sizing: border-box;
+}
+
+#branding #site-name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0;
+}
+
+#branding #site-name a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#branding #site-name a:hover {
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.subtitulo-admin {
+    color: #f7dfdf;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+/* ENLACES SUPERIORES */
+
+#user-tools {
+    color: #ffffff;
+}
+
+#user-tools a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#user-tools a:hover {
+    color: #ffe1e1;
+}
+
+/* NAVEGACIÓN */
+
+div.breadcrumbs {
+    background: #672020;
+    padding: 14px 30px;
+    color: #ffffff;
+}
+
+div.breadcrumbs a {
+    color: #ffffff;
+}
+
+/* TARJETAS Y MÓDULOS */
+
+.module {
+    background: #ffffff;
+    border: 1px solid #e1e5e8;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.module h2,
+.module caption,
+.inline-group h2 {
+    background: #8f2d2d;
+    color: #ffffff;
+    padding: 15px 18px;
+    font-weight: 700;
+}
+
+.module caption a {
+    color: #ffffff;
+}
+
+.dashboard .module table {
+    width: 100%;
+}
+
+.dashboard .module table td,
+.dashboard .module table th {
+    padding: 14px 16px;
+}
+
+.dashboard .module table tr:hover {
+    background: #f9f1f1;
+}
+
+/* TABLAS DE REGISTROS */
+
+#changelist {
+    background: transparent;
+}
+
+#changelist .results {
+    overflow-x: auto;
+}
+
+#changelist table {
+    background: #ffffff;
+    border-collapse: collapse;
+}
+
+#changelist table thead th {
+    background: #f4e8e8;
+    color: #672020;
+    padding: 14px 12px;
+    font-weight: 700;
+}
+
+#changelist table tbody td,
+#changelist table tbody th {
+    padding: 13px 12px;
+}
+
+#changelist table tbody tr:hover {
+    background: #fcf5f5;
+}
+
+/* FILTROS */
+
+#changelist-filter {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e1e5e8;
+    overflow: hidden;
+}
+
+#changelist-filter h2 {
+    background: #8f2d2d;
+    color: #ffffff;
+    padding: 14px;
+}
+
+#changelist-filter h3 {
+    color: #672020;
+    font-weight: 700;
+}
+
+/* FORMULARIOS */
+
+.form-row {
+    padding: 16px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+input[type="search"],
+textarea,
+select {
+    border: 1px solid #cfd6db;
+    border-radius: 7px;
+    padding: 9px 11px;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #8f2d2d;
+    outline: 2px solid rgba(143, 45, 45, 0.16);
+    outline-offset: 0;
+}
+
+/* BOTONES */
+
+.button,
+input[type="submit"],
+input[type="button"],
+.submit-row input,
+a.button {
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+.object-tools a {
+    border-radius: 7px;
+}
+
+.submit-row {
+    background: #ffffff;
+    border: 1px solid #e1e5e8;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* ENLACES */
+
+a:link,
+a:visited {
+    transition: color 0.15s ease;
+}
+
+/* MENSAJES */
+
+.messagelist li {
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* DISEÑO RESPONSIVE */
+
+@media (max-width: 767px) {
+    #header {
+        padding: 18px;
+    }
+
+    #branding #site-name a {
+        font-size: 21px;
+    }
+
+    .subtitulo-admin {
+        font-size: 11px;
+    }
+
+    #content {
+        padding: 18px;
+    }
+
+    .module {
+        border-radius: 8px;
+    }
+}

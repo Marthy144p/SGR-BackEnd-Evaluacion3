@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+
+{% block titulo %}
+Resumen de Agenda | SGR La Serena
+{% endblock %}
+
+
+{% block contenido %}
+
+<section class="hero">
+
+    <p class="etiqueta">
+        AGENDA
+    </p>
+
+    <h1>
+        Resumen de Agenda
+    </h1>
+
+    <p class="descripcion-principal">
+        Resumen general de los compromisos registrados
+        según su estado actual.
+    </p>
+
+</section>
+
+
+<section class="grilla-aplicaciones">
+
+    <article class="tarjeta-aplicacion">
+
+        <span class="etiqueta">
+            TOTAL
+        </span>
+
+        <h2>
+            {{ total_compromisos }}
+        </h2>
+
+        <p>
+            Compromisos registrados
+        </p>
+
+    </article>
+
+
+    <article class="tarjeta-aplicacion">
+
+        <span class="etiqueta">
+            INGRESADOS
+        </span>
+
+        <h2>
+            {{ ingresados }}
+        </h2>
+
+        <p>
+            Compromisos ingresados
+        </p>
+
+    </article>
+
+
+    <article class="tarjeta-aplicacion">
+
+        <span class="etiqueta">
+            PENDIENTES
+        </span>
+
+        <h2>
+            {{ pendientes }}
+        </h2>
+
+        <p>
+            Compromisos pendientes
+        </p>
+
+    </article>
+
+
+    <article class="tarjeta-aplicacion">
+
+        <span class="etiqueta">
+            EN PROCESO
+        </span>
+
+        <h2>
+            {{ en_proceso }}
+        </h2>
+
+        <p>
+            Compromisos en proceso
+        </p>
+
+    </article>
+
+
+    <article class="tarjeta-aplicacion">
+
+        <span class="etiqueta">
+            REALIZADOS
+        </span>
+
+        <h2>
+            {{ realizados }}
+        </h2>
+
+        <p>
+            Compromisos realizados
+        </p>
+
+    </article>
+
+</section>
+
+
+<p>
+    <a class="boton"
+       href="{% url 'agenda:lista_compromisos' %}">
+
+        Volver a compromisos
+
+    </a>
+</p>
+
+{% endblock %}

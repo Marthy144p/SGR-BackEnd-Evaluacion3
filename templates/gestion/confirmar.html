@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block titulo %}Desactivar | {{ recurso.titulo }}{% endblock %}
+{% block contenido %}
+<div class="confirmar-panel"><span class="micro">CONFIRMACIÓN REQUERIDA</span><h1>¿Desactivar este registro?</h1><p><strong>{{ objeto }}</strong> (ID #{{ objeto.pk }})</p>
+<p>Se conserva el registro y sus relaciones históricas. La operación se realiza únicamente después de confirmar mediante POST.</p>
+<form method="post" class="form-acciones">{% csrf_token %}<button type="submit" class="boton-peligro">Sí, desactivar</button><a class="boton-secundario" href="{% url 'gestion:detalle' recurso.slug objeto.pk %}">Cancelar (sin cambios)</a></form></div>
+{% endblock %}

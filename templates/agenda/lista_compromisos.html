@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+
+{% block titulo %}
+Agenda | SGR La Serena
+{% endblock %}
+
+
+{% block contenido %}
+
+<section class="hero">
+
+    <p class="etiqueta">
+        AGENDA
+    </p>
+
+    <h1>
+        Compromisos
+    </h1>
+
+    <p class="descripcion-principal">
+        Consulta de compromisos, responsables, fechas,
+        estados y observaciones de la gestión municipal.
+    </p>
+
+</section>
+
+
+<section class="grilla-aplicaciones">
+
+    {% for compromiso in compromisos %}
+
+        <article class="tarjeta-aplicacion">
+
+            <span class="etiqueta">
+                {{ compromiso.estado }}
+            </span>
+
+            <h2>
+                {{ compromiso.titulo }}
+            </h2>
+
+            <p>
+                <strong>Responsable:</strong>
+                {{ compromiso.responsable }}
+            </p>
+
+            <p>
+                <strong>Fecha:</strong>
+                {{ compromiso.fecha_compromiso }}
+            </p>
+
+            <p>
+                {{ compromiso.descripcion }}
+            </p>
+
+            <a class="boton"
+               href="{% url 'agenda:detalle_compromiso' compromiso.id %}">
+
+                Ver detalle
+
+            </a>
+
+        </article>
+
+    {% empty %}
+
+        <p>
+            No existen compromisos registrados.
+        </p>
+
+    {% endfor %}
+
+</section>
+
+
+<section class="presentacion">
+
+    <h2>
+        Resumen de Agenda
+    </h2>
+
+    <p>
+        Consulta un resumen general de los compromisos
+        según su estado actual.
+    </p>
+
+    <a class="boton"
+       href="{% url 'agenda:resumen_agenda' %}">
+
+        Ver resumen
+
+    </a>
+
+</section>
+
+{% endblock %}
